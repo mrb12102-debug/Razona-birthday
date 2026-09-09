@@ -6,7 +6,9 @@
 <title>Happy Birthday Razona ❤️</title>
 
 <style>
-*{box-sizing:border-box}
+*{
+    box-sizing:border-box;
+}
 
 html,body{
     margin:0;
@@ -123,6 +125,7 @@ body{
     z-index:3;
     font:bold 12px Arial;
     letter-spacing:2px;
+    color:white;
 }
 
 .hint{
@@ -132,7 +135,9 @@ body{
 }
 
 @keyframes pulse{
-    50%{transform:scale(1.07)}
+    50%{
+        transform:scale(1.07);
+    }
 }
 
 /* BIRTHDAY */
@@ -206,8 +211,13 @@ body{
     box-shadow:0 6px 0 #b63d6e;
 }
 
-.bottom{bottom:25px}
-.top{bottom:70px}
+.bottom{
+    bottom:25px;
+}
+
+.top{
+    bottom:70px;
+}
 
 .cream{
     position:absolute;
@@ -232,9 +242,17 @@ body{
     );
 }
 
-.c1{left:78px}
-.c2{left:105px}
-.c3{left:132px}
+.c1{
+    left:78px;
+}
+
+.c2{
+    left:105px;
+}
+
+.c3{
+    left:132px;
+}
 
 .flame{
     position:absolute;
@@ -254,6 +272,38 @@ body{
         transform:rotate(-45deg) scale(1.15);
     }
 }
+
+/* MUSIC BUTTON */
+
+.musicBtn{
+    margin-top:18px;
+    width:64px;
+    height:64px;
+    border:1px solid rgba(255,255,255,.4);
+    border-radius:50%;
+    background:rgba(255,255,255,.12);
+    color:white;
+    font-size:27px;
+    cursor:pointer;
+    box-shadow:0 0 22px rgba(255,120,180,.45);
+    transition:.3s;
+}
+
+.musicBtn:hover{
+    transform:scale(1.12);
+}
+
+.musicBtn:active{
+    transform:scale(.95);
+}
+
+.musicText{
+    font:10px Arial;
+    opacity:.5;
+    margin-top:7px;
+}
+
+/* BIRTHDAY TEXT */
 
 .bday p{
     font:13px Arial;
@@ -285,11 +335,30 @@ body{
     }
 }
 
-.h1{left:8%;animation-delay:.2s}
-.h2{left:25%;animation-delay:1.5s}
-.h3{left:48%;animation-delay:2.2s}
-.h4{left:72%;animation-delay:.8s}
-.h5{left:90%;animation-delay:2.8s}
+.h1{
+    left:8%;
+    animation-delay:.2s;
+}
+
+.h2{
+    left:25%;
+    animation-delay:1.5s;
+}
+
+.h3{
+    left:48%;
+    animation-delay:2.2s;
+}
+
+.h4{
+    left:72%;
+    animation-delay:.8s;
+}
+
+.h5{
+    left:90%;
+    animation-delay:2.8s;
+}
 
 /* TRANSITION */
 
@@ -365,9 +434,13 @@ body{
     padding:10px 19px;
     letter-spacing:1px;
     font:11px Arial;
+    cursor:pointer;
 }
 
+/* MOBILE */
+
 @media(max-width:420px){
+
     .card{
         padding:30px 20px;
     }
@@ -375,6 +448,7 @@ body{
     .card p{
         font-size:14px;
     }
+
 }
 </style>
 </head>
@@ -385,28 +459,29 @@ body{
 
 <section id="intro" class="screen">
 
-<div class="stars"></div>
-<div class="glow"></div>
+    <div class="stars"></div>
+    <div class="glow"></div>
 
-<div class="intro">
+    <div class="intro">
 
-<div class="eyebrow">
-A little surprise for you
-</div>
+        <div class="eyebrow">
+            A little surprise for you
+        </div>
 
-<h1>
-Someone made this just for you.
-</h1>
+        <h1>
+            Someone made this just for you.
+        </h1>
 
-<button class="heartBtn" id="open">
-<span>OPEN</span>
-</button>
+        <button class="heartBtn" id="open">
+            <span>OPEN</span>
+        </button>
 
-<div class="hint">
-tap the heart
-</div>
+        <div class="hint">
+            tap the heart
+        </div>
 
-</div>
+    </div>
+
 </section>
 
 
@@ -414,57 +489,74 @@ tap the heart
 
 <section id="birthday" class="screen">
 
-<div class="stars"></div>
+    <div class="stars"></div>
 
-<div class="bday">
+    <div class="bday">
 
-<div class="tiny">
-today is all about you
-</div>
+        <div class="tiny">
+            today is all about you
+        </div>
 
-<div class="cake">
+        <!-- CAKE -->
 
-<div class="plate"></div>
+        <div class="cake">
 
-<div class="layer bottom"></div>
+            <div class="plate"></div>
 
-<div class="layer top"></div>
+            <div class="layer bottom"></div>
 
-<div class="cream"></div>
+            <div class="layer top"></div>
 
-<div class="candle c1">
-<i class="flame"></i>
-</div>
+            <div class="cream"></div>
 
-<div class="candle c2">
-<i class="flame"></i>
-</div>
+            <div class="candle c1">
+                <i class="flame"></i>
+            </div>
 
-<div class="candle c3">
-<i class="flame"></i>
-</div>
+            <div class="candle c2">
+                <i class="flame"></i>
+            </div>
 
-</div>
+            <div class="candle c3">
+                <i class="flame"></i>
+            </div>
 
-<h2>
-Happy Birthday
-</h2>
+        </div>
 
-<div class="name">
-Razona
-</div>
+        <h2>
+            Happy Birthday
+        </h2>
 
-<p>
-Make a wish. ✨
-</p>
+        <div class="name">
+            Razona
+        </div>
 
-</div>
+        <!-- MUSIC -->
 
-<span class="heart h1">♥</span>
-<span class="heart h2">♥</span>
-<span class="heart h3">♥</span>
-<span class="heart h4">♥</span>
-<span class="heart h5">♥</span>
+        <button class="musicBtn" id="musicBtn">
+            ❤️
+        </button>
+
+        <div class="musicText">
+            tap the heart for music
+        </div>
+
+        <audio id="birthdaySong" src="song.mp3" preload="auto"></audio>
+
+        <p>
+            Make a wish. ✨
+        </p>
+
+    </div>
+
+
+    <!-- FLOATING HEARTS -->
+
+    <span class="heart h1">♥</span>
+    <span class="heart h2">♥</span>
+    <span class="heart h3">♥</span>
+    <span class="heart h4">♥</span>
+    <span class="heart h5">♥</span>
 
 </section>
 
@@ -479,68 +571,130 @@ Make a wish. ✨
 
 <section id="message" class="screen">
 
-<div class="card">
+    <div class="card">
 
-<h3>
-Happy Birthday, my love.
-</h3>
+        <h3>
+            Happy Birthday, my love.
+        </h3>
 
-<p>
-  Happy birthday, Razona ❤️<br>
-  Happy birthday to the most beautiful person in my life.<br>
-  I hope we can celebrate every birthday together, my love.<br>
-  I hope this year is a happy year for you, full of happiness and good moments.<br>
-  I want you to know that I love you so much, more than anything.<br>
-  You are the most beautiful girl I've ever seen, and the best person who came into my life.<br>
-  I hope we always stay together and make all our dreams come true together.<br>
-  Love you so much, Razona ❤️
-</p>
+        <p>
+            Happy birthday, Razona ❤️<br>
+            Happy birthday to the most beautiful person in my life.<br>
+            I hope we can celebrate every birthday together, my love.<br>
+            I hope this year is a happy year for you, full of happiness and good moments.<br>
+            I want you to know that I love you so much, more than anything.<br>
+            You are the most beautiful girl I've ever seen, and the best person who came into my life.<br>
+            I hope we always stay together and make all our dreams come true together.<br>
+            Love you so much, Razona ❤️
+        </p>
 
-<div class="love">
-Love you, Razona ❤️
-</div>
+        <div class="love">
+            Love you, Razona ❤️
+        </div>
 
-<button class="replay" id="replay">
-WATCH AGAIN
-</button>
+        <button class="replay" id="replay">
+            WATCH AGAIN
+        </button>
 
-</div>
+    </div>
 
 </section>
 
 
 <script>
 
-const intro=document.getElementById("intro");
-const birthday=document.getElementById("birthday");
-const flash=document.getElementById("flash");
-const message=document.getElementById("message");
+const intro = document.getElementById("intro");
+const birthday = document.getElementById("birthday");
+const flash = document.getElementById("flash");
+const message = document.getElementById("message");
+
+const birthdaySong = document.getElementById("birthdaySong");
+const musicBtn = document.getElementById("musicBtn");
+
+let musicStarted = false;
+
+
+/* START */
 
 function start(){
 
-message.classList.remove("show");
-flash.classList.remove("on");
-birthday.classList.remove("show");
-intro.classList.remove("hide");
-
-setTimeout(()=>{
-    intro.classList.add("hide");
-    birthday.classList.add("show");
-},150);
-
-setTimeout(()=>{
-    flash.classList.add("on");
-},6500);
-
-setTimeout(()=>{
+    message.classList.remove("show");
     flash.classList.remove("on");
-    message.classList.add("show");
-},7700);
+    birthday.classList.remove("show");
+    intro.classList.remove("hide");
+
+
+    /*
+       أول ضغطة على قلب OPEN
+       تشغل الأغنية تلقائيًا
+    */
+
+    birthdaySong.currentTime = 0;
+
+    birthdaySong.play()
+        .then(()=>{
+            musicStarted = true;
+            musicBtn.innerHTML = "⏸️";
+        })
+        .catch(()=>{
+            musicStarted = false;
+        });
+
+
+    setTimeout(()=>{
+        intro.classList.add("hide");
+        birthday.classList.add("show");
+    },150);
+
+
+    setTimeout(()=>{
+        flash.classList.add("on");
+    },6500);
+
+
+    setTimeout(()=>{
+        flash.classList.remove("on");
+        message.classList.add("show");
+    },7700);
 
 }
 
-document.getElementById("open").onclick=start;
-document.getElementById("replay").onclick=start;
+
+/* OPEN HEART */
+
+document.getElementById("open").onclick = start;
+
+
+/* MUSIC BUTTON */
+
+musicBtn.onclick = function(){
+
+    if(birthdaySong.paused){
+
+        birthdaySong.play();
+
+        musicBtn.innerHTML = "⏸️";
+
+    }else{
+
+        birthdaySong.pause();
+
+        musicBtn.innerHTML = "❤️";
+
+    }
+
+};
+
+
+/* WATCH AGAIN */
+
+document.getElementById("replay").onclick = function(){
+
+    birthdaySong.currentTime = 0;
+
+    start();
+
+};
 
 </script>
 
